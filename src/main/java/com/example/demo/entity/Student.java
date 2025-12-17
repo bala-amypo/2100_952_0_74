@@ -1,5 +1,10 @@
 package com.example.StudentProject.entity;
+
 import java.time.LocalDate;
+
+import jakarta.persistence.Entity;
+
+@Entity
 public class Student {
     private Long id;
     private String name;
@@ -36,15 +41,15 @@ public class Student {
     public void setDob(LocalDate dob) { 
         this.dob = dob;
     }
+    public Student(){
+
+    }
     public Student(Long id, String name, String dept, float cgpa, LocalDate dob) {
         this.id = id;
         this.name = name;
         this.dept = dept;
         this.cgpa = cgpa;
         this.dob = dob;
-    }
-    public Student(){
-        
     }
 }
 
