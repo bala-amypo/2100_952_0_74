@@ -41,7 +41,7 @@ public class Student {
         return dob;
     }
     public void setDob(LocalDate dob) { 
-        this.dmvnob = dob;
+        this.dob = dob;
     }
     public Student(){
 
