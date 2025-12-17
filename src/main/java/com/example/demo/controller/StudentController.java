@@ -16,7 +16,7 @@ public class StudentController{
     }
     @GetMapping("/displayStudent")
     public List<Student> displayStudent(){
-        return stdser.getstudent();
+        return stdser.getAllStudent(); 
     }
 }
  
