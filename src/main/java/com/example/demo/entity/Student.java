@@ -13,7 +13,7 @@ public class Student {
     private String dept;
     private float cgpa;
     private LocalDate dob;
-    public int getId(){
+    public Long getId(){
         return id;
     }
     public void setId(Long id) {
