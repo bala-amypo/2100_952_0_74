@@ -33,7 +33,7 @@ public class Student {
     public LocalDate getDob() {
         return dob;
     }
-    public void setDob(LocalDate dob) {
+    public void setDob(LocalDate dob) { 
         this.dob = dob;
     }
     public Student(Long id, String name, String dept, float cgpa, LocalDate dob) {
