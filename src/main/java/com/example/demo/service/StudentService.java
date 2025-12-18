@@ -5,4 +5,5 @@ import java.util.List;
 public interface StudentService{
     Student poststudent(Student st);
     List<Student> getAllStudent();
+    Student getById(Long id);
 }
