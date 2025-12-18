@@ -14,7 +14,7 @@ public class StudentController{
     }
     @GetMapping("/displayStudent")
     public List<Student> displayStudent(){
-        return stdser.getAllStudent();
+        return stdser.getAllS tudent();
     }
     @GetMapping("/getStudent/{id}")
     public Optional<Student> getStudent(@PathVariable Long id){
