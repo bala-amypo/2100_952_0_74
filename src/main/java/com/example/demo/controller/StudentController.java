@@ -4,12 +4,13 @@ import com.example.demo.entity.Student;
 import com.example.demo.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import java.util.*;
+import jakarta.validation.constraints.*;
 @RestController
 public class StudentController{
     @Autowired
     StudentService stdser;
     @PostMapping("/addStudent")
-    public Student addStudent(@RequestBody Student st){
+    public Student addStudent(@Valid @RequestBody Student st){
         return stdser.poststudent(st);
     }
     @GetMapping("/displayStudent")
@@ -21,7 +22,7 @@ public class StudentController{
         return stdser.getById(id);
     }
     @PutMapping("/update/{id}")
-    public String update(@PathVariable Long id, @RequestBody Student st){
+    public String update(@PathVariable Long id, @Valid @RequestBody Student st){
     return stdser.updateData(id,st);
     }
     @DeleteMapping("/delete/{id}")

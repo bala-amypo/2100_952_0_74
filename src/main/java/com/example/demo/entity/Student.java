@@ -7,8 +7,10 @@ public class Student {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
+    @NotBlank(message="Name is not valid");
     private String name;
     private String dept;
+    @PastOrPresent
     private float cgpa;
     private LocalDate dob;
     public Long getId(){
