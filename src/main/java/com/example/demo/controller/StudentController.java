@@ -19,5 +19,6 @@ public class StudentController{
     public List<Student> displayStudent(){
         return stdser.getAllStudent(); 
     }
+    @
 }
  
