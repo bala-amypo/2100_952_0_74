@@ -5,6 +5,8 @@ import com.example.demo.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import java.util.*;
 import jakarta.validation.constraints.*;
+import jakarta.validation.Valid;
+
 @RestController
 public class StudentController{
     @Autowired
