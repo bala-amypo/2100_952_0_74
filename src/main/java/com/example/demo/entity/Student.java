@@ -1,7 +1,7 @@
 package com.example.demo.entity;
 import java.time.LocalDate;
 import jakarta.persistence.*;
-import jakarta.validatation.constraints.*;
+import jakarta.validation.constraints.*;
 @Entity
 public class Student {
     @Id
